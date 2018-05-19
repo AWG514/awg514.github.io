@@ -1,26 +1,24 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
 
+<h1>The onclick Event</h1>
 
-<input id="button" type="submit" name="button" value="enter"/>
+<p>The onclick event is used to trigger a function when an element is clicked on.</p>
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
 <script>
-    navigator.vibrate = (navigator.vibrate ||
-        navigator.webkitVibrate ||
-        navigator.mozVibrate ||
-        navigator.msVibrate);
-
-    document.getElementById('button').onclick = function() {
-        alert("button was clicked");
-        navigator.vibrate([3000, 2000, 1000]);
-    }​;​
-
-    window.onload = function() {
-        navigator.vibrate([500]);
-    };
-    window.navigator.vibrate([5000]);
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+navigator.vibrate(3000)
+windows.navigator.vibrate(3000)
+}
 </script>
+
 </body>
 </html>

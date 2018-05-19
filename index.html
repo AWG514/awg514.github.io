@@ -3,21 +3,14 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+
+
+<input id="button" type="submit" name="button" value="enter"/>
 <script>
-    navigator.vibrate([3000, 2000, 1000]);
-    </script>
-<div class="ui slider checkbox">
-    <input id="product-1" type="checkbox">
-    <label for="product-1">Duvel</label>
-</div>
-<div class="ui slider checkbox">
-    <input id="product-2" type="checkbox">
-    <label for="product-2">Jupiler</label>
-</div>
-<script>
-$(".ui.checkbox").click(function() {
-navigator.vibrate([5, 200, 20]);
-});
+    document.getElementById('button').onclick = function() {
+        alert("button was clicked");
+        navigator.vibrate([3000, 2000, 1000]);
+    }​;​
 </script>
 </body>
 </html>
